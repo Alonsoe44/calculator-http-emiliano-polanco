@@ -1,8 +1,7 @@
 const { program } = require("commander");
 
-program.option("-n1, --userNumberOne <number>");
-program.option("-n2, --userNumberTwo <number>");
+program.option("-p, --port <number>");
 program.parse();
-const { userNumberOne, userNumberTwo } = program.opts();
+const { port } = program.opts();
 
-module.exports = [userNumberOne, userNumberTwo];
+module.exports = port;
